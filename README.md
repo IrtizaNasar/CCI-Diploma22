@@ -242,7 +242,7 @@ YoHa. 2013. Lions’ Commentary on UNIX 6th Edition, with Source Code. http://yo
  
 ### Hour 4: 
 - Break (10 Mins) 
-- Coding exercise: Poetic code – Nicola (45 Mins) 
+- Coding exercise: Poetic code – Tom & Nicola (45 Mins) 
 
 <!-- See the [Unit 1 Moodle](https://moodle.arts.ac.uk/course/view.php?id=63591) for a link to the Collaborate Ultra Session for this week.
 
