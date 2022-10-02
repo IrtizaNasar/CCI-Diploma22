@@ -137,49 +137,49 @@ Following the <a href="https://twitter.com/helenbevan/status/1175650749797167104
 
 - Group Ice Breaker (20mins)
 
-- Split into groups and discuss: What is creative computing? 
-- Class Disucssion (10mins) 
+   - Split into groups and discuss: What is creative computing? 
+   - Class Disucssion (10mins) 
 
 
 ### Hour 2
 
 
 - Unit Team Introductions (20 Mins)
+
   - Pauline (5 Mins)
   - Tom (5 Mins)
   - Nicola (5 Mins)
   - Irti (5 Mins)
-General unit overview - Irti (10 Mins)
 
-Examples (30 Mins)
-Work that students may produce/develop/draw upon - Tom (10 Mins)
-An overview of historical/theoretical/artists content - Pauline (5 Mins)
+- General unit overview - Irti (10 Mins)
 
-
-Break (15 Mins)
+- Examples (30 Mins)
+   - Work that students may produce/develop/draw upon - Tom (10 Mins)
+- An overview of historical/theoretical/artists content - Pauline (5 Mins)
+- Break (15 Mins)
 
 
 ### Hour 3
 
-Git - Irti (15 Mins)
-Introduction (5 Mins)
-Setup (10 Mins)
-VS Code - Irti (10 Mins)
-Introduction (2 Mins)
-Setup (8 Mins)
-Introduction to theories/histories - Pauline (30 Mins)
+- Git - Irti (15 Mins)
+   - Introduction (5 Mins)
+   - Setup (10 Mins)
+- VS Code - Irti (10 Mins)
+   - Introduction (2 Mins)
+   - Setup (8 Mins)
+- Introduction to theories/histories - Pauline (30 Mins)
 
 
 ### Hour 4 
 
-Introduction to theories/histories (Continued) - Pauline (15 Mins)
+- Introduction to theories/histories (Continued) - Pauline (15 Mins)
 
-Break (10 Mins)
+- Break (10 Mins)
 
-Intro to command line - Tom (35 Mins)
+- Intro to command line - Tom (35 Mins)
 
-Commandline introduction (history and why it's of interest) and demo (15 Mins)
-Group Activity (20 Mins)
+   - Commandline introduction (history and why it's of interest) and demo (15 Mins)
+   - Group Activity (20 Mins)
 
 
 
