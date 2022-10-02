@@ -171,7 +171,7 @@ Setup (8 Mins)
 Introduction to theories/histories - Pauline (30 Mins)
 
 
-###Hour 4 
+### Hour 4 
 
 Introduction to theories/histories (Continued) - Pauline (15 Mins)
 
@@ -198,9 +198,9 @@ Ritchie, D.M. 1977. The UNIX Time-sharing System - A Retrospective*. Bell Labora
 
 YoHa. 2013. Lions’ Commentary on UNIX 6th Edition, with Source Code. http://yoha.co.uk/node/678. 
 
+<br>
 
-
-Further sessions are TBC, depending on multiple choice test and practical exam timings, and other unit's assessment timings. -->
+## Week 2 - Monday 3rd October 2022 - Introduction to HTML, JavaScript libraries + ‘Computational Thinking’ :
 
 <!-- See the [Unit 1 Moodle](https://moodle.arts.ac.uk/course/view.php?id=63591) for a link to the Collaborate Ultra Session for this week.
 
