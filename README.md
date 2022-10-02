@@ -203,7 +203,7 @@ YoHa. 2013. Lions’ Commentary on UNIX 6th Edition, with Source Code. http://yo
 
 ### Hour 1: 
 
-- Core Technical Concepts – Irti (20 Mins) 
+- Core Programming Concepts – Irti (20 Mins) 
    - Variables (5 Mins) 
    - Datatypes (5 Mins) 
    - Functions (5 Mins) 
