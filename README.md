@@ -244,6 +244,17 @@ YoHa. 2013. Lions’ Commentary on UNIX 6th Edition, with Source Code. http://yo
 - Break (10 Mins) 
 - Coding exercise: Poetic code – Tom & Nicola (45 Mins) 
 
+### Reading/Resources 
+Ali, S.M., 2016. A brief introduction to decolonial computing. XRDS: Crossroads, The ACM Magazine for Students, 22(4), pp.16-21.	
+
+Tyżlik-Carver, M., Pritchard, H. and Snodgrass, E., 2018. Executing Practices. 
+
+D’Ignazio, C. and Klein, L.F., 2020b. Seven intersectional feminist principles for equitable and actionable COVID-19 data. Big Data & Society, 7(2). 
+
+Robinson, Derek. 2008, Variable. In Software Studies: A Lexicon. MIT Press, pp.260–66. 
+
+Starosielski, Nicole. 2021. Media Hot and Cold. Duke University Press. 
+
 <!-- See the [Unit 1 Moodle](https://moodle.arts.ac.uk/course/view.php?id=63591) for a link to the Collaborate Ultra Session for this week.
 
 - 1000-1100: **Introduction lecture** - via Collaborate Ultra on Moodle, watch my introduction lecture on the course, creative coding, JavaScript and specifically p5.js. [Slides for reference](https://jgl.github.io/CCIDiploma-AutumnWinter2021/slides/lecture_00.html).
