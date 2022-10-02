@@ -133,21 +133,21 @@ Following the <a href="https://twitter.com/helenbevan/status/1175650749797167104
 ### Hour 1 
 
 
-Introduction to the diploma - Murad (30 Mins) 
+- Introduction to the diploma - Murad (30 Mins) 
 
-Group Ice Breaker (20mins)
+- Group Ice Breaker (20mins)
 
-Split into groups and discuss: What is creative computing? 
-Class Disucssion (10mins) 
+- Split into groups and discuss: What is creative computing? 
+- Class Disucssion (10mins) 
 
 
 ### Hour 2
 
 
-Unit Team Introductions (20 Mins)
+- Unit Team Introductions (20 Mins)
 
-Pauline (5 Mins)
-Tom (5 Mins)
+- - Pauline (5 Mins)
+- - Tom (5 Mins)
 Nicola (5 Mins)
 Irti (5 Mins)
 General unit overview - Irti (10 Mins)
