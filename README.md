@@ -126,9 +126,81 @@ This of idea of small technical exercises was inspired by [Caitlin Morris](http:
 
 Following the <a href="https://twitter.com/helenbevan/status/1175650749797167104?s=11">latest research</a>, I've decided to shift us from pairs to threes. After all, <a href="https://www.youtube.com/watch?v=np0YIaHv6LQ">three is a magic number</a>. -->
 
-## Block 1, Unit 1 schedule:
+<!-- ## Block 1, Unit 1 schedule: -->
 
-## Week 1 - Monday 26th September 2022 - Introduction to the course
+## Week 1 - Monday 26th September 2022 - Introduction to the course:
+
+### Hour 1 
+
+
+Introduction to the diploma - Murad (30 Mins) 
+
+Group Ice Breaker (20mins)
+
+Split into groups and discuss: What is creative computing? 
+Class Disucssion (10mins) 
+
+
+### Hour 2
+
+
+Unit Team Introductions (20 Mins)
+
+Pauline (5 Mins)
+Tom (5 Mins)
+Nicola (5 Mins)
+Irti (5 Mins)
+General unit overview - Irti (10 Mins)
+
+Examples (30 Mins)
+Work that students may produce/develop/draw upon - Tom (10 Mins)
+An overview of historical/theoretical/artists content - Pauline (5 Mins)
+
+
+Break (15 Mins)
+
+
+### Hour 3
+
+Git - Irti (15 Mins)
+Introduction (5 Mins)
+Setup (10 Mins)
+VS Code - Irti (10 Mins)
+Introduction (2 Mins)
+Setup (8 Mins)
+Introduction to theories/histories - Pauline (30 Mins)
+
+
+###Hour 4 
+
+Introduction to theories/histories (Continued) - Pauline (15 Mins)
+
+Break (10 Mins)
+
+Intro to command line - Tom (35 Mins)
+
+Commandline introduction (history and why it's of interest) and demo (15 Mins)
+Group Activity (20 Mins)
+
+
+
+### Reading/Resources 
+
+Chun, W.H.K., 2011. Programmed visions: Software and memory. Mit Press. Pp.1-11 
+
+sHicks, M., 2017. Programmed inequality: How Britain discarded women technologists and lost its edge in computing. MIT Press. 
+
+Liu, W. 2018. Freedom isn’t Free. Logic Magazine. Issue 5, Failure.  
+
+Trevorssah, A. 2016. A Brief History of the Command Line. Free Code Camp. https://www.freecodecamp.org/news/the-command-line-1fdbc692b3bf 
+
+Ritchie, D.M. 1977. The UNIX Time-sharing System - A Retrospective*. Bell Laboratories. 
+
+YoHa. 2013. Lions’ Commentary on UNIX 6th Edition, with Source Code. http://yoha.co.uk/node/678. 
+
+
+
+Further sessions are TBC, depending on multiple choice test and practical exam timings, and other unit's assessment timings. -->
 
 <!-- See the [Unit 1 Moodle](https://moodle.arts.ac.uk/course/view.php?id=63591) for a link to the Collaborate Ultra Session for this week.
 
@@ -137,8 +209,6 @@ Following the <a href="https://twitter.com/helenbevan/status/1175650749797167104
 - 1200-1300: **Watch/listen 1** - via Collaborate Ultra on Moodle absorb a lecture from me on Counting and Remembering, in preparation for next weeks session. [Slides for reference](https://jgl.github.io/CCIDiploma-AutumnWinter2021/slides/lecture_01.html).
 
 
-
-Further sessions are TBC, depending on multiple choice test and practical exam timings, and other unit's assessment timings. -->
 
 <!-- ## Thanks
 
