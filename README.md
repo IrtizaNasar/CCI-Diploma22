@@ -144,12 +144,11 @@ Following the <a href="https://twitter.com/helenbevan/status/1175650749797167104
 ### Hour 2
 
 
-* Unit Team Introductions (20 Mins)
-
-- Pauline (5 Mins)
+- Unit Team Introductions (20 Mins)
+  - Pauline (5 Mins)
   - Tom (5 Mins)
-Nicola (5 Mins)
-Irti (5 Mins)
+  - Nicola (5 Mins)
+  - Irti (5 Mins)
 General unit overview - Irti (10 Mins)
 
 Examples (30 Mins)
