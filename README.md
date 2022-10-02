@@ -1,9 +1,9 @@
-# Lecture/workshop slides and wiki for Unit 1 of the [Creative Computing Institute](https://www.arts.ac.uk/creative-computing-institute)'s 2022/2023 [Diploma in Creative Computing](https://www.arts.ac.uk/subjects/creative-computing/undergraduate/ual-creative-computing-institute-diploma).
+# Lecture/workshop slides and wiki for Creative Coding and Creative Computing Frameworks Unit of the [Creative Computing Institute](https://www.arts.ac.uk/creative-computing-institute)'s 2022/2023 [Diploma in Creative Computing](https://www.arts.ac.uk/subjects/creative-computing/undergraduate/ual-creative-computing-institute-diploma).
 
 ## Information
 
 - [All term dates](https://www.arts.ac.uk/students/term-dates) 
-- Lecturers: Irti 
+- Lecturers: Irti, Nicola Plant, Tom Keene and Pauline
 - Location: [Creative Computing Institute](https://www.arts.ac.uk/creative-computing-institute), in person at the Greencoat Building.
 - Contact us via the [UAL Creative Computing Institute Slack](https://ual-cci.slack.com).
 - Weekly Unit teaching times are every Monday 09:30-13:30.
@@ -49,7 +49,7 @@ The [Diploma in Creative Computing](https://www.arts.ac.uk/subjects/creative-com
 
 **Block 2** consists of three units:
 
-- Unit 4: Coding for Collaborative App Development 
+- Unit 4: Creative Coding: Critical Infrastructures 
 - Unit 5: Working and the Digital Creative Industries 
 - Unit 6: Creative Practice: Computational Environments 
 
@@ -70,7 +70,7 @@ Please read [UAL's guidance for students on how they will be assessed](https://w
 
 N.B. The Diploma is assessed to [Level 5 Assessment Criteria Descriptors](https://www.arts.ac.uk/study-at-ual/academic-regulations/course-regulations/assessment) - see the link to the PDF at the bottom of this page.
 
-At the end of this block (midway through the 2022 Spring term) you should have the following outcomes, with subheadings for methods and platforms we will use to do so. To be clear, I want you to obtain knowledge and then use that to make projects. My aim is to have every student graduate with new creative computing core knowledge and a portfolio of projects that relate that new creative computing knowledge to their chosen BA subject elsewhere at University of the Arts London (UAL).
+<!-- At the end of this block (midway through the 2022 Spring term) you should have the following outcomes, with subheadings for methods and platforms we will use to do so. To be clear, I want you to obtain knowledge and then use that to make projects. My aim is to have every student graduate with new creative computing core knowledge and a portfolio of projects that relate that new creative computing knowledge to their chosen BA subject elsewhere at University of the Arts London (UAL). -->
 
 ### Unit 1 / Block 1: "Creative coding and creative computing frameworks"
 
