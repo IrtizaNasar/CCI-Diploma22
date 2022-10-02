@@ -3,7 +3,7 @@
 ## Information
 
 - [All term dates](https://www.arts.ac.uk/students/term-dates) 
-- Lecturers: Irti, Nicola Plant, Tom Keene and Pauline 
+- Lecturers: Irti 
 - Location: [Creative Computing Institute](https://www.arts.ac.uk/creative-computing-institute), in person at the Greencoat Building.
 - Contact us via the [UAL Creative Computing Institute Slack](https://ual-cci.slack.com).
 - Weekly Unit teaching times are every Monday 09:30-13:30.
