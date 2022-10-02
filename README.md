@@ -201,6 +201,44 @@ YoHa. 2013. Lions’ Commentary on UNIX 6th Edition, with Source Code. http://yo
 
 ## Week 2 - Monday 3rd October 2022 - Introduction to HTML, JavaScript libraries + ‘Computational Thinking’ :
 
+### Hour 1: 
+
+- Core Technical Concepts – Irti (20 Mins) 
+   - Variables (5 Mins) 
+   - Datatypes (5 Mins) 
+   - Functions (5 Mins) 
+   - Framework (5 mins) 
+ 
+- JavaScript – Irti (10 Mins) 
+   - What is JavaScript? (2 Mins) 
+   - Alert Demo (8 Mins) 
+  
+
+- Creating HTML and JavaScript – Tom (30 Mins) 
+   - Getting setup (view and workspace) (8 Mins) 
+   - The anatomy of an HTML page (inc comments) (8 Mins) 
+   - Adding JavaScript  (variables, functions) (10 Mins) 
+   - Embed JavaScript as a separate file (4 Mins) 
+
+### Hour 2: 
+
+- Get P5.js working offline with VS Code - Nicola(45 Mins) 
+   - p5 framework intro (5 Mins) 
+   - Download, open in VS Code and run first sketch in browser (8 Mins) 
+   - setup() and draw() functions (2 Mins) 
+   - Commenting code (3 Mins) 
+   - p5 variables and datatypes (5 Mins) 
+   - Simple functions and p5 reference (5 Mins) 
+   - Short exercise (15 Mins) 
+
+- Break 15 Mins 
+ 
+### Hour 3: 
+Theories, Histories and Art – Pauline (45 Mins) 
+ 
+### Hour 4: 
+Coding exercise: Poetic code – Nicola (45 Mins) 
+
 <!-- See the [Unit 1 Moodle](https://moodle.arts.ac.uk/course/view.php?id=63591) for a link to the Collaborate Ultra Session for this week.
 
 - 1000-1100: **Introduction lecture** - via Collaborate Ultra on Moodle, watch my introduction lecture on the course, creative coding, JavaScript and specifically p5.js. [Slides for reference](https://jgl.github.io/CCIDiploma-AutumnWinter2021/slides/lecture_00.html).
