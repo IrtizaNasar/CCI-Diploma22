@@ -10,7 +10,6 @@
             width:21cm;
         }
         input{
-            border:1px solid red;
             margin:5px;
         }
         /* override styles for print */
@@ -27,6 +26,7 @@
         <button type="button" onclick="loopThroughArray();">Loop through array</button> 
         <button type="button" onclick="loopNtimes(30);">Loop 30 times</button>
         <button type="button" onclick="infiniteLoop();">Infinite loop</button>
+        <button type="button" onclick="infiniteStyleLoop();">Style</button>
         <button type="button" onclick="clearForm();">Clear</button>
     </div> 
 
@@ -40,10 +40,10 @@
         let inputs = ["checkbox","color","date","month","radio","range","submit"];
     
         // Create an <input type=""> element
-        function createInput(type){
+        function createInput(type, style){
             const input = document.createElement("input");            // Creates: <input type="">
             input.setAttribute("type", type);                         // e.g.: <input type="button">
-            input.setAttribute("style", "border:1px solid blue;");    // e.g.: <input type="button" style="border:1px solid blue;">
+            input.setAttribute("style", style);                       // e.g.: <input type="button" style="border:1px solid blue;">
             document.getElementById("theform").appendChild(input);    // Add this HTML element to the form tag identified by "theform" ID
         }
     
@@ -74,18 +74,43 @@
     
         // Infinite loop on a timer 
         let index = 0;
+        let end = false; 
         function infiniteLoop(){
             index = random(inputs.length-1);
-            createInput(inputs[index]);         
-            setTimeout(infiniteLoop, 200);
+            createInput(inputs[index]);  
+            if(!end){       
+                setTimeout(infiniteLoop, 200);
+            }else{
+                end = false; 
+            }
         }
-    
+
+        // Style loop on a timer 
+        function infiniteStyleLoop(){
+            let index = random(inputs.length-1);
+            let deg = random(360);
+            let t = random(100);
+            let b = random(100);
+            let style = "transform:rotate("+deg+"deg);";
+            style += "position:absolute;";
+            style += "top:"+t+"%;";
+            style += "left:"+b+"%;";
+            console.log(style);
+            createInput(inputs[index], style);  
+            if(!end){       
+                setTimeout(infiniteStyleLoop, 200);
+            }else{
+                end = false; 
+            }
+        }
+
         // Clear all elements from the form 
         function clearForm(){
            document.getElementById("theform").remove();
            let form = document.createElement("form"); // Recreates the form element
            form.setAttribute("id", "theform"); 
            document.body.appendChild(form);
+           end = true; 
         }
     
         // Returns a random number between 0 and the 'end' variable

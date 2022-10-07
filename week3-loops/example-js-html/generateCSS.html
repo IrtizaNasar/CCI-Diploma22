@@ -1,0 +1,28 @@
+<!DOCTYPE html><html>
+<style>    
+	div{        
+		border:1px solid red;        
+		width:100px;        
+		height:100px;        
+		position:absolute;        
+		top: 100px;        
+		left:40%;  
+		transform:rotate(0deg); 
+	}
+</style>
+<body></body>
+<script>
+function createTag(mytag, mycontent, mystyle){                
+  const tag = document.createElement(mytag);    	
+  tag.setAttribute("style", mystyle);     		
+  tag.innerHTML = mycontent;                   
+  document.body.appendChild(tag);      
+}
+let d=0;
+for(let i=0;i<15;i++){    
+	d=i*5;  
+    style = "transform:rotate("+d+"deg);"; 
+	createTag("div", "x", style);
+}
+</script>
+</html>
