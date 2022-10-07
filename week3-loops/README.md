@@ -1,0 +1,1 @@
+Examples of loops arrays and conditionals for week three.
