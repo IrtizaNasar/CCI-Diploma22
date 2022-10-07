@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Defines the CSS-->
+    <style>
+        html{
+            background-color:grey;
+            margin: auto;
+            width:21cm;
+        }
+        input{
+            border:1px solid red;
+            margin:5px;
+        }
+        /* override styles for print */
+        @media print {
+            #buttons{display:none;}
+        }
+    </style>
+    </head>
+<body>
+
+    <!--These buttons trigger functions in the script--->
+    <div id="buttons" style="margin-bottom:20px;">
+        <button type="button" onclick="generateHTML();">Generate HTML elements</button> 
+        <button type="button" onclick="loopThroughArray();">Loop through array</button> 
+        <button type="button" onclick="loopNtimes(30);">Loop 30 times</button>
+        <button type="button" onclick="infiniteLoop();">Infinite loop</button>
+        <button type="button" onclick="clearForm();">Clear</button>
+    </div> 
+
+    <!--Input elements automatically get generated in here-->
+    <form id="theform">
+    </form>
+
+    <script>
+        // Array of form input types. 
+        // See: https://www.w3schools.com/html/html_form_input_types.asp
+        let inputs = ["checkbox","color","date","month","radio","range","submit"];
+    
+        // Create an <input type=""> element
+        function createInput(type){
+            const input = document.createElement("input");            // Creates: <input type="">
+            input.setAttribute("type", type);                         // e.g.: <input type="button">
+            input.setAttribute("style", "border:1px solid blue;");    // e.g.: <input type="button" style="border:1px solid blue;">
+            document.getElementById("theform").appendChild(input);    // Add this HTML element to the form tag identified by "theform" ID
+        }
+    
+        // Automatically generate three HTML elements 
+        function generateHTML(type){
+            createInput(inputs[0]); //  Create a checkbox input  
+            createInput(inputs[2]); //  Create a date input
+            createInput(inputs[7]); //  Create a submit  
+        }
+    
+        // Loop through each item in the array and call the createInput function 
+        function loopThroughArray(){
+            inputs.forEach(createInput);
+        }
+    
+        // Loop N times 
+        function loopNtimes(n){
+            let count = 0; 
+            for(i=1;i<=n;i++){
+                createInput(inputs[count]); 
+                if(count >= inputs.length){
+                    count = 0; 
+                }else{
+                    count++;
+                } 
+            }
+        }
+    
+        // Infinite loop on a timer 
+        let index = 0;
+        function infiniteLoop(){
+            index = random(inputs.length-1);
+            createInput(inputs[index]);         
+            setTimeout(infiniteLoop, 200);
+        }
+    
+        // Clear all elements from the form 
+        function clearForm(){
+           document.getElementById("theform").remove();
+           let form = document.createElement("form"); // Recreates the form element
+           form.setAttribute("id", "theform"); 
+           document.body.appendChild(form);
+        }
+    
+        // Returns a random number between 0 and the 'end' variable
+        function random(end){
+            return Math.floor(Math.random()*end); // Returns a random number
+        }
+    
+    </script>
+</body>
+</html>
+
