@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My JavaScript Framework</title>
+  <script src="MyFramework.js"></script>
+</head>
+<body>
+
+  <div id="myBox">
+
+  </div>
+
+  <script>
+    let id = "myBox"; 
+    let tag = "p"; 
+    let r = random(0, 255);
+    let g = random(10, 255);
+    let b = random(0, 255);
+    let style = `color: rgb(${r},${g},${b});`;
+    let content = `a paragraph in ${id}` ;
+    createTagAtID(id, tag, style, content); 
+  </script>
+
+</body>
+</html>
