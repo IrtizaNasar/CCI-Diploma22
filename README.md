@@ -3,7 +3,7 @@
 ## Course content
 
 - [See the UAL moodle page for the latest course content](https://moodle.arts.ac.uk/course/view.php?id=71219)
-- [Download the Creative Coding Cheat Sheet](creative-coding-cheat-sheet.pdf)
+- [Download the latest Creative Coding Cheat Sheet (updated each week)](https://github.com/IrtizaNasar/CCI-Diploma22-CreativeCoding/raw/main/creative-coding-cheat-sheet.pdf)
 
 ## Information
 
