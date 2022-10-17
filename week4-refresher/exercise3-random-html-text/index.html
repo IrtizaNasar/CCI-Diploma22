@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            position:relative;
+            border:1px solid rgb(135, 131, 131);
+            height:500px;
+            width:500px;
+            margin:auto;
+            margin-top:50px;
+        }
+        div{
+            position:absolute;
+            border:1px solid rgb(194, 235, 113);
+            text-align:center;
+            width:200px;
+            height:20px;
+            line-height:20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:bold;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="top:200px;left:150px;z-index:1;height:40px;">INFINITE LOOP<br>REGENERATION</div>
+    <script>
+        const words = [
+            "consultation",
+            "financial viability",
+            "displacement",
+            "killing-community",
+            "social-cleansing",
+            "art-washing",
+            "governance",
+            "demolition",
+            "destroyed homes",
+            "for-profit"
+        ];
+        let consulation; 
+        let style;
+        let x;
+        let y;
+        for(word=0;word<words.length;word++){
+            consulation = document.createElement("div");
+            x = Math.floor(Math.random()*300);
+            y = Math.floor(Math.random()*480);
+            style = `left:${x}px;top:${y}px;`; 
+            consulation.setAttribute("style", style);
+            consulation.innerHTML = words[word];
+            document.body.append(consulation); 
+        }
+        setTimeout(function(){
+            window.location.reload(1);
+        }, 1000);
+    </script>
+</body>
+</html>
