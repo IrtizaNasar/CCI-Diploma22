@@ -1,6 +1,6 @@
 # Lecture/workshop slides and wiki for Creative Coding and Creative Computing Frameworks Unit of the [Creative Computing Institute](https://www.arts.ac.uk/creative-computing-institute)'s 2022/2023 [Diploma in Creative Computing](https://www.arts.ac.uk/subjects/creative-computing/undergraduate/ual-creative-computing-institute-diploma).
 
-## Course content
+## Course content 
 
 - [See the UAL moodle page for the latest course content](https://moodle.arts.ac.uk/course/view.php?id=71219)
 - [Download the latest Creative Coding Cheat Sheet (updated each week)](https://github.com/IrtizaNasar/CCI-Diploma22-CreativeCoding/raw/main/Creative_Coding_Cheat_Sheet.pdf)
