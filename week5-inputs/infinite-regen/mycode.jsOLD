@@ -1,11 +1,9 @@
 // Setup global variables
 const home = document.getElementById("home");
-const submit = document.getElementById("tracker");
-submit.setAttribute("onclick", "createShamConsultation(event)");
-document.body.setAttribute("onmousemove", "moveMe(event)");
+const submit = document.getElementById("tracker"); 
 const words = [
     "consultation",
-    "financial-viability",
+    "financial viability",
     "displacement",
     "killing-community",
     "social-cleansing",
@@ -16,11 +14,12 @@ const words = [
     "affordability",
     "party-politics"
 ];
-let intensity = 0;
+let intensity = 0; 
 
 /* Function to create an HTML tag at 
    x/y cordinates relative to #home */
-function createTag(word, x, y, d){
+   function createTag(word, x, y, d){
+    let home = document.getElementById("home");
     let tag = document.createElement("div");
     tag.innerHTML = word;
     tag.setAttribute("class", "word");
@@ -33,7 +32,7 @@ function createTag(word, x, y, d){
 // Loops through words array
 function createShamConsultation(){
     let x, y;
-	let body = document.body;
+		let body = document.body;
     for(word=0; word<words.length; word++){
         x = createRandom(-100,700); 
         y = createRandom(-50,500);  
@@ -55,9 +54,10 @@ function createShamConsultation(){
     }, 50); // Timer
 }
 
+
 function moveMe(event){
-    submit.style.left=(event.pageX-50)+'px';
-    submit.style.top=(event.pageY-30)+'px';
+    submit.style.left = (event.pageX-50)+'px';
+    submit.style.top = (event.pageY-30)+'px';
 }
 
 function createRandom(from, to){ 
@@ -68,5 +68,4 @@ function createRandom(from, to){
 }
 
 console.log('all OK');
-
 
