@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;  
+}
+body {    /* This centers our drawing. */   
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(60,63,60);
+}
+#home{    /* The HTML id of the drawing. */    
+    position:relative;
+    height:450px;
+    width:800px;
+    background-image: url('cress.jpg');
+    background-size: 100%;
+}
+.word{   /* Default styles of words - allows them to be assigned x/y coords. */  
+    position:absolute;
+    background:rgba(200, 200, 200, 0.4);
+    width:200px;
+    text-align:center;
+    font-family: Courier;
+    height:20px;
+    font-size:14px;
+    line-height:20px;
+    z-index:1;
+    color:rgb(60,63,60);
+}
+input{  /* Ensures submit remains above all other tags and can move anywhere. */
+    position:fixed;
+    z-index:2;
+    padding:20px;
+    width:100px;
+    text-transform: uppercase;
+}
