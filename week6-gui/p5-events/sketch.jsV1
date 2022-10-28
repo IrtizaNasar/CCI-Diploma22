@@ -1,30 +1,29 @@
 let r, g, b, x, y;
 
 function setup() {
-  createCanvas(400, 300);
+  createCanvas(400, 400);
   r = 200;
-  g = 200; 
-  b = 200; 
+  g = 200;
+  b = 200;
   myButton = createButton('Hello');     // Create a button
-	myButton.position(250, 25);           // set its position
-	myButton.mousePressed(myButtonClick); // On a MouseClick call myButtonClick();
-  myButton.style('background', 'rgb(100,200,50)'); 
+	myButton.position(300, 300);          // set its position
+	myButton.mousePressed(myButtonClick); // On a MouseClick call myButtonClick()
 }
 
 function draw() {
   background(r, g, b);
 
-  // Mouse clicks 
+  // Mouse pressed event
   push();
   fill(255);
-  if (mouseIsPressed === true) {
-	  ellipse(50, 50, 50, 50); 
+	if (mouseIsPressed === true) {
+    ellipse(50, 50, 50, 50); 
   } else {
     rect(25, 25, 50, 50);    
   }
   pop();
 
-  // Key pressed event. 
+  // Key pressed event
   push();
   if (keyIsPressed === true && keyCode===82) { // if key is "r"
     fill(200,0,0);
@@ -36,13 +35,13 @@ function draw() {
   rect(100, 25, 50, 50); 
   pop();
 
-  // Event on a circle 
+  // Event on a circle - work out distance between mouse and circle
   push();
   x = 200;
   y = 50;
   let radius = 50; 
-  let distance = dist(mouseX, mouseY, x, y); //distance between mouse and circle
-  if(distance < radius/2){ // If the mouse is in the radius 
+  let distance = dist(mouseX, mouseY, x, y); 
+  if(distance < radius/2){ // If its less that the radius 
     fill(100);
     cursor(HAND);
   } else {
@@ -59,18 +58,24 @@ function draw() {
   w = 50;
   h = 100;
   fill(255);
-  // Works out the coordiantes on the screen 
   if ((mouseX>x) && (mouseX<x+w) && (mouseY>y) && (mouseY<y+h)){
     fill(0);
   }
-  rect(x, y, 50, 50);
+  rect(x, y, w, h);
   pop();
 
 }
 
+function windowResized() {
+	r = random(50, 255);
+  g = random(50, 255);
+  b = random(50, 255);
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 function myButtonClick() {
 	r = random(50, 255);
   g = random(50, 255);
   b = random(50, 255);
 }
+
