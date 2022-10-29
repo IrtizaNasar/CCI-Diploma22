@@ -74,3 +74,10 @@ function myButtonClick() {
   g = random(50, 255);
   b = random(50, 255);
 }
+
+function windowResized() {
+	r = 255;
+  g = 0;
+  b = 0;
+  resizeCanvas(windowWidth, windowHeight);
+}
