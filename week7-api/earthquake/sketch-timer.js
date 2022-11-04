@@ -3,7 +3,7 @@ let url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.cs
 
 function setup() {
   createCanvas(500, 400);
-  //table = loadTable(url, 'csv', 'header');
+  table = loadTable(url, 'csv', 'header');
 }
 
 function draw(){
@@ -25,7 +25,7 @@ function draw(){
     for (let row=0; row<rows; row++){
         // Access placename and magnitude variables from the CSV
         let name = table.getString(row, 'place');     // Grab placename 
-        let nameArr = name.split(" of ");             // Split the placename at ' of '
+        name = name.split(" of ")[1];             // Split the placename at ' of '
         let magnitude = table.getString(row, 'mag');  // Grab the magnitute
         // Draw the ellipse and text label
         ellipse(x, y, magnitude*12, magnitude*12);
