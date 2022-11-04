@@ -1,0 +1,8 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2022-11-02T07:13:57.050Z,19.2040004730225,-155.383666992188,36.5800018310547,2.95,ml,45,207,,0.109999999,hv,hv73204447,2022-11-02T07:19:28.370Z,"9 km E of Pāhala, Hawaii",earthquake,0.52,0.409999996,3.84,31,automatic,hv,hv
+2022-11-02T07:05:05.630Z,33.1208333,-116.0598333,4.24,1.42,ml,44,44,0.08661,0.28,ci,ci40128239,2022-11-02T07:08:49.695Z,"7km ESE of Ocotillo Wells, CA",earthquake,0.34,1.35,0.167,27,automatic,ci,ci
+2022-11-02T07:04:51.360Z,19.2281665802002,-155.391494750977,31.9899997711182,1.99000001,md,40,152,,0.129999995,hv,hv73204442,2022-11-02T07:07:57.820Z,"9 km ENE of Pāhala, Hawaii",earthquake,0.57,0.660000026,0.959999979,12,automatic,hv,hv
+2022-11-02T06:57:15.070Z,38.8266678,-122.8050003,2.09,0.75,md,11,76,0.005137,0.01,nc,nc73802356,2022-11-02T07:14:14.467Z,"7km NW of The Geysers, CA",earthquake,0.39,0.59,0.1,2,automatic,nc,nc
+2022-11-02T06:53:30.197Z,60.4106,-152.7638,13.2,0.5,ml,,,,0.28,ak,ak022e26c80r,2022-11-02T06:55:21.299Z,"72 km WNW of Ninilchik, Alaska",earthquake,,0.7,,,automatic,ak,ak
+2022-11-02T06:40:33.133Z,60.6594,-152.6775,10.2,1.6,ml,,,,0.25,ak,ak022e269fxt,2022-11-02T06:42:24.560Z,"74 km W of Salamatof, Alaska",earthquake,,0.2,,,automatic,ak,ak
+2022-11-02T06:23:21.450Z,60.4345,-152.6783,13.9,2.3,ml,,,,0.68,ak,ak022e265rv5,2022-11-02T06:29:40.640Z,"70 km NW of Ninilchik, Alaska",earthquake,,0.1,,,automatic,ak,ak
