@@ -13,14 +13,14 @@ function draw(){
 
     // SETUP DEFAULT VARIABLES 
     let rows = table.getRowCount();  // Count the rows in the CSV  
-    let x = 70;                      // Default x position
+    let x = 40;                      // Default x position
     let y = 50;                      // Default y position 
 
     // LOOP THROUGH CSV & DISPLAY QUAKES 
     for (let row=0; row<rows; row++){
 
         // Access placename and magnitude variables from the CSV
-        let name = table.getString(row, 'place');     // Grab placename 
+        let name = table.getString(row, 'place');   // Grab placename 
         let magnitude = table.getString(row, 'mag');  // Grab the magnitute
 
         // Draw the ellipse and text label
@@ -29,9 +29,9 @@ function draw(){
 
         // Calculate the x,y coordinates of the next ellipse 
         x += width/3; 
-        if (x > width-70){
+        if (x > width-40){
             y += 80;
-            x = 70;
+            x = 40;
         } 
     }
 
