@@ -21,6 +21,7 @@ function draw(){
 
         // Access placename and magnitude variables from the CSV
         let name = table.getString(row, 'place');     // Grab placename 
+        name = name.split(" of ")[1];   
         let magnitude = table.getString(row, 'mag');  // Grab the magnitute
 
         // Draw the ellipse and text label
