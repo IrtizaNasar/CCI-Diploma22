@@ -1,7 +1,7 @@
 let url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.csv";
 
 function setup() {
-  createCanvas(500, 440);
+  createCanvas(500, 450);
   rectMode(CENTER);
   noStroke();
   table = loadTable(url, 'csv', 'header');
@@ -29,6 +29,7 @@ function draw(){
         //ellipse(x, y, magnitude*12, magnitude*12);
         
         drawVolcano(x,y,magnitude);
+        
         fill(255);
         text(name+'\n'+magnitude, x-50, y+65);  // Label
 
