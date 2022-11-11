@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 4; i++) {
     xpos1 = xpos2;
     ypos1 = ypos2;
     xpos2 = xpos1 + int(random(-20, 20));
@@ -18,7 +18,7 @@ function draw() {
     
     line(xpos1, ypos1, xpos2, ypos2);
 
-    if ((xpos2 > width) | (xpos2 < 0) | (ypos2 > height) | (ypos2 < 0)) {
+    if ((xpos2>width) | (xpos2<0) | (ypos2>height) | (ypos2<0)) {
       background(0);
       xpos2 = int(random(0, width));
       ypos2 = 0;
