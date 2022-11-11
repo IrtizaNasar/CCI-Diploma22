@@ -13,6 +13,12 @@ function setcounter(){
   counter--; 
 }
 
+// Called once the JSON is loaded 
+function loadedweather(json){
+  weatherjson = json; 
+}
+
+
 function draw() {
   background(230);
   let m = month();
@@ -60,12 +66,6 @@ function draw() {
   wave(y+70, 13,  150.0, speed); // Ypos, spacing, freq
 
 }
-
-// Called once the JSON is loaded 
-function loadedweather(json){
-  weatherjson = json; 
-}
-
 
 // Derived from:  https://p5js.org/examples/math-sine-wave.html
 function wave(ypos, xspace, freq, speed){
