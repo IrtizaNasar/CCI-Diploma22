@@ -71,21 +71,19 @@ function draw() {
   text(`Temp:  ${temp}°C`, x, y+15);
   text(`  Rain:  ${rain}mm`, x, y+30);
 
-  // Prep some variables for the graphics 
-  noStroke();
-  fill(43, 102, 180);
-  y = height-100;   
   // Draw some waves
+  noStroke();
   fill(43, 142, 240);
-  speed = map(rain, 0, 15, 0.01, 0.09);
-  wave(y, 9,  30.0, speed);      // Ypos, spacing, freq
-  wave(y+40, 11,  60.0, speed);  // Ypos, spacing, freq
-  wave(y+70, 13,  150.0, speed); // Ypos, spacing, freq
-  theta += speed;
+  y = height-100;   
+  speed = map(rain, 0, 15, 0.01, 0.09); // Map rain to wave speed
+  newwave(y, 9,  30.0, speed);      // Ypos, spacing, freq
+  newwave(y+40, 11,  60.0, speed);  // Ypos, spacing, freq
+  newwave(y+70, 13,  150.0, speed); // Ypos, spacing, freq
+
 }
 
 // Derived from:  https://p5js.org/examples/math-sine-wave.html
-function wave(ypos, xspace, freq, speed){
+function newwave(ypos, xspace, freq, speed){
   let dx = (TWO_PI/freq)*xspace;        // Calc wave frequency 
   let w = floor((width+xspace)/xspace); // Calc spacing
   let yvals = new Array(w);             // Store height values
