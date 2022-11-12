@@ -1,78 +1,95 @@
+// See https://open-meteo.com/en/docs#api_form 
 let weatherjson = false; 
+let weatherloaded = 0; 
 let counter = 0; 
-let yr = 2022; 
+let yr, ukdate; 
 let theta = 0.0; // Calculating speed of waves
+let img;
 
 function setup() {
-  createCanvas(400, 400);
-  // Call 'setcounter' every second
-  setInterval(setcounter, 1000);
+  createCanvas(400, 300);
+  setInterval(countdown, 1000); // Call 'setcounter' every second
+  img = loadImage('temp.png'); 
 }
 
-function setcounter(){
+function countdown(){
+  // Variables to work with in the rest of the script
+  let m = month();
+  let d = day();
   counter--; 
+
+  // Timer to load JSON data every 30 seconds
+  if(counter<0){
+    // Reset countdown to 30 secs
+    counter = 30;        
+    yr = int(random(1963, 2022));
+    // Build date strings for the API URL and to draw
+    let apidate = `${yr}-${m}-${d}`;
+    ukdate = `${d}-${m}-${yr}`;
+    // Build the weather URL (see https://open-meteo.com/en/docs#api_form) 
+    let weatherurl = "https://archive-api.open-meteo.com/v1/era5?";
+    weatherurl += `latitude=51.5002&longitude=-0.1262`;
+    weatherurl += `&start_date=${apidate}&end_date=${apidate}`;
+    weatherurl += "&daily=temperature_2m_max,rain_sum&timezone=auto";
+    // Load the JSON
+    loadJSON(weatherurl, loadedweather); 
+  }
 }
 
 // Called once the JSON is loaded 
 function loadedweather(json){
   weatherjson = json; 
+  weatherloaded++; 
 }
 
 
 function draw() {
+  // Draw a grey background and the timer 
   background(230);
-  let m = month();
-  let d = day();
-  
-  // Timer to load JSON data every 30 seconds
-  if(counter<0){
-    // Reset some variables 
-    counter = 30;
-    weatherjson = false;
-    yr = int(random(1963, 2022));
-    let date = `${yr}-${m}-${d}`;
-    // Construct a weather URL (see https://open-meteo.com/en/docs#api_form) 
-    let weatherurl = "https://archive-api.open-meteo.com/v1/era5?";
-    weatherurl += `latitude=51.5002&longitude=-0.1262`;
-    weatherurl += `&start_date=${date}&end_date=${date}`;
-    weatherurl += "&daily=temperature_2m_max,rain_sum&timezone=auto";
-    // Load the JSON
-    loadJSON(weatherurl, loadedweather); 
-  }
-  text(counter, width-20, 18);
+  fill(255);
+  textSize(16);
+  text(frameCount, width-150, 18);
+  text(counter, width-90, 18);
+  text(weatherloaded, width-25, 18);
 
-  // If JSON hasn't loaded then stop drawing
+  // If the JSON hasn't loaded then don't go any further
   if(weatherjson===false) return;
 
   // Otherwise get the date, temp, and rain
   let temp = weatherjson.daily.temperature_2m_max;
   let rain = weatherjson.daily.rain_sum;
-  
+
+  // Add gradiated image to the background
+  let pos = map(temp, -20, 40, -1000, 0);
+  image(img, 0, pos); // Position is linked to the temp
+
   // Draw the date, temp, and rainfall text
   let x = 10;
   let y = 30;
   textAlign(LEFT);
-  text(`  Date: ${d}-${m}-${yr}`, x, y);
-  text('Temp: '+temp+"°C", x, y+15);
-  text('  Rain: '+rain+"mm", x, y+30);
+  text(`  Date: ${ukdate}`, x, y);
+  text(`Temp:  ${temp}°C`, x, y+15);
+  text(`  Rain:  ${rain}mm`, x, y+30);
 
-  // Draw some waves
+  // Prep some variables for the graphics 
   noStroke();
+  fill(43, 102, 180);
+  y = height-100;   
+  // Draw some waves
   fill(43, 142, 240);
-  speed = map(rain, 0, 15, 0.00, 0.09);
-  y = height-100;
-  wave(y, 9,  30.0, speed);    // Ypos, spacing, freq
-  wave(y+40, 11,  60.0, speed); // Ypos, spacing, freq
+  speed = map(rain, 0, 15, 0.01, 0.09);
+  wave(y, 9,  30.0, speed);      // Ypos, spacing, freq
+  wave(y+40, 11,  60.0, speed);  // Ypos, spacing, freq
   wave(y+70, 13,  150.0, speed); // Ypos, spacing, freq
-
+  theta += speed;
 }
 
 // Derived from:  https://p5js.org/examples/math-sine-wave.html
 function wave(ypos, xspace, freq, speed){
-  let dx = (TWO_PI/freq)*xspace; 
-  let w = floor((width+xspace)/xspace)
-  let yvals = new Array(w); // Array to store height values
-  theta += speed;
+  let dx = (TWO_PI/freq)*xspace;        // Calc wave frequency 
+  let w = floor((width+xspace)/xspace); // Calc spacing
+  let yvals = new Array(w);             // Store height values
+  theta += speed;                       // Calc speed of all waves
 
   // For every x value calculate a y value with sine function
   let x = theta;
