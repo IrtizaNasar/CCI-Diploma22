@@ -46,11 +46,6 @@ function loadedweather(json){
 function draw() {
   // Draw a grey background and the timer 
   background(230);
-  fill(255);
-  textSize(16);
-  text(frameCount, width-150, 18);
-  text(counter, width-90, 18);
-  text(weatherloaded, width-25, 18);
 
   // If the JSON hasn't loaded then don't go any further
   if(weatherjson===false) return;
@@ -62,6 +57,13 @@ function draw() {
   // Add gradiated image to the background
   let pos = map(temp, -20, 40, -1000, 0);
   image(img, 0, pos); // Position is linked to the temp
+
+  // Draw text
+  fill(255);
+  textSize(16);
+  text(frameCount, width-150, 18);
+  text(counter, width-90, 18);
+  text(weatherloaded, width-25, 18);
 
   // Draw the date, temp, and rainfall text
   let x = 10;
